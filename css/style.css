@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    background-color:#f3f1f1;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+}
+
+header{
+    padding: 0 25px;
+    background-color: white;
+    background-color:#f3f1f1;
+    color: black;  
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index:3;
+}
+header>div{
+    font-size: 3em;
+    float: left;
+    margin: 15px auto;
+}
+header>div:hover{
+    background-color: #e4e2de;
+    cursor: pointer;
+}
+header>h1{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    line-height: 190%;
+    font-size: 2em;
+}
+
+nav{
+    z-index:5;
+    width:18%;
+    min-width:300px;
+    height: 0; /* change this with Javascript*/
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: white;
+    transition: 0.5s;
+}
+nav>ul{
+    padding-top: 25px;
+    list-style-type: none; 
+    display: none;
+}
+nav>ul>li{
+    transition: 0.3s;
+    padding: 10px 0;
+}
+nav>ul>li:hover{
+    background-color: lightgray;
+}
+nav>ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+
+section{
+    margin-top: 5%;
+}
+#aboutme{
+    width: 65%;
+    margin: auto;
+    line-height: 1.6;
+    background-color: white;
+
+}
+.heading-meta{
+    margin-top: 40px;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999999;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+.colorlib-heading{
+    font-size: 18px;
+    margin-bottom: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.8;
+    position: relative;
+}
+#aboutme>img{
+    display:block;
+    width: 100%;
+    filter: grayscale(50%);
+    margin: 5px auto;
+}
+
+#aboutme h2{
+    text-decoration:underline;
+    font-size: 1.25em;
+}
+
+.description{
+    color: black;
+    margin-top: 0;
+    font-size: 1.15em;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.row-aboutMe{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 35px;
+    margin-bottom: 70px;
+    padding-bottom: 30px;
+}
+
+.row-aboutMe>div{
+    box-shadow: 0px 0px 56px -8px rgb(0 0 0 / 17%);
+
+}
+.row-aboutMe>div:first-child{
+    border-bottom: 2px solid #2c98f0;
+}
+.row-aboutMe>div:nth-child(2){
+    border-bottom: 2px solid #ec5453;
+}
+.row-aboutMe>div:nth-child(3){
+    border-bottom: 2px solid #f9bf3f
+}
+.row-aboutMe>div:nth-child(4){
+    border-bottom: 2px solid #a84cb8;
+}
+.row-aboutMe img{
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.row-aboutMe h3{
+    margin: 20px;
+}
+/* techskill */
+#techSkills{
+    width: 65%;
+    margin: auto;
+    line-height: 1.6;
+}
+.specific-techSkill{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 70px;
+    padding-bottom: 30px;
+}
+.specific-techSkill>div{
+    width: 80%;
+    margin: 0, auto;
+}
+.specific-techSkill progress{
+    width: 100%;
+}
+
+#progress-java{
+    background-color: #ec5453;
+    color: white;
+}
+#progress-html{
+    background-color: #f9bf3f;
+    color: white;
+}
+#progress-css{
+    background-color: #a84cb8;
+    color: white;
+}
+#progress-js{
+    background-color: #2fa499;
+    color: white;
+}
+#progress-sql{
+    background-color:#4054b2;
+    color: white;
+}
+#progress-dl{
+    background-color: #2c98f0;
+    color: white;
+}
+/*  */
+#myWorks{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:auto; 
+    grid-gap: 20px;
+}
+#myWorks>div:first-child{
+    grid-column: 1/4;
+}
+.photos{
+    background: #fff;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.photos:hover{
+    transform : translateY(-2px);
+    transition: 0.3s;
+    box-shadow: 0 4px 5px rgba(0,0,0,.2);   
+}
+
+.photos>img{
+    width: 90%;
+    height: auto;
+    margin: auto auto;
+    
+}
+.photos>p{
+    margin-top: 0px;
+    display: inline;
+    font-size: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+#modal{
+    display: none;
+    z-index: 7;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position:fixed;
+    left:0;
+    top:0;
+}
+#modal>div{
+    width: 80%;
+    margin: 100px auto;
+}
+#modal>div>img{
+    width: 100%;
+}
+
+/* experience  - 년도 옆으로 가게하고 아이콘 넣기 */
+#experience{
+    width: 70%;
+    margin: 80px auto;
+}
+.experience-container {
+    margin: 30px auto;
+    border-left: 5px solid #333;
+    padding-left: 2.5em;
+    
+  }
+  .experience-container>article {
+    position: relative;
+    background: #f2f3f7;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .experience-container>article::before {
+    content: url("../images/pencil2.png");
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    border: 3px solid #333;
+    position: absolute;
+    top: 1.5em;
+    left: -4.1em;
+    z-index: 1;
+  }
+  .experience-container>article::after {
+    content: "";
+    position: absolute;
+    background: #f2f3f7;
+    top: 1.5em;
+    left: -1.9em;
+    border: 1em solid white;
+    border-right: 1em solid #f2f3f7;
+    transform: rotate(45);
+  }
+/*  */
+#education{
+    width: 70%;
+    margin: 50px auto;
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+
+.accordion{
+    color: black;
+}
+
+.education-title{
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    padding-left: 10px;
+    /* position: relative; */
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.education-title > h6{
+    display: inline;
+}
+
+.education-title:after{
+    content: '\f105';
+    font-family: fontawesome;
+    /* position: absolute;
+    right: 10px;
+    top:3px; */
+    float: right;
+    margin-right: 5px;
+    margin-top: 3px;
+    transition: 0.3s;
+}
+
+.education-title.active:after{
+    transform:rotate(90deg);
+    color: orange;
+}
+
+.education-title:hover, .education-title.active{
+    background-color: #203049;
+    color:white;
+}
+
+ .education-desc{
+    padding: 15px;
+    display: none;
+}
+
+.education-desc.active{
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-gap: 15px;
+}
+
+#contact{
+    width: 70%;
+    margin: 30px auto;
+}
+.contact-method{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px ;
+
+}
+.contact-method div{
+    display: flex;
+    align-items: center;
+}
+.contact-method  i{
+    background-color: #203049;
+    color:white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 155%;
+}
+
+.contact-method>div a, .contact-method span{
+    padding-left: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+    margin-top:20px
+}
+
+@media only screen and (max-width: 850px) {
+
+    .row-aboutMe{
+        grid-template-columns: 1fr 1fr;
+    }
+    #myWorks{
+        grid-template-columns: 1fr 1fr;
+    }
+    #myWorks>div:first-child{
+        grid-column: 1/3;
+    }
+    section{
+        margin-top: 70px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    section{
+        margin-top: 100px;
+    }
+    .row-aboutMe{
+        grid-template-columns: 1fr;
+    }
+    .description{
+    font-size: 1em;
+    text-align: left;
+    }
+    .specific-techSkill{
+        grid-template-columns: 1fr;
+    }
+    #myWorks{
+        grid-template-columns: 1fr;
+    }
+    #myWorks>div:first-child{
+        grid-column: 1/2;
+    }
+    #education>div{
+        width: 80%;
+        font-size: 1em;
+    }
+    .education-desc.active{
+        grid-template-columns: 1fr;
+
+    }
+    #aboutme>p{
+        font-size: 0.8em;
+    }
+    #aboutme>p>b{
+        font-size: 1em;
+    }
+
+    #modal>div>p{
+        font-size: 0.9em;
+    }
+    .contact-method{
+        grid-template-columns: 1fr;
+    }
+}

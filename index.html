@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/f5517b6277.js" crossorigin="anonymous"></script>
+    <title>Portfolio - Gayoung Kim</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="menu", onclick="OpenMenu()">☰</div>
+            <h1> Gayoung Kim</h1>
+        </header>
+        <nav id="mySidebar">
+            <ul class = "sidebarbutton">
+                <li onclick="CloseMenu()"><a href="javascript:void(0)">Close Menu</a></li>
+                <li onclick="CloseMenu()"><a href="#aboutme">About Me</a></li>
+                <li onclick="CloseMenu()"><a href="#techSkills" >Tech Skills</a></li>
+                <li onclick="CloseMenu()"><a href="#myWorks" >Project</a></li>
+                <li onclick="CloseMenu()"><a href="#education">Education</a></li>
+                <li onclick="CloseMenu()"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div id="aboutme">
+                <img src="images/main.jpg" alt="photo of gayoung">
+                <span class="heading-meta">About Me</span>
+                <h2 class="colorlib-heading">"Hello I'm Gayoung Kim, 
+                    <br>and want to be a software developer"</h2>
+                <p class="description">
+                    I've always wanted my work to give people a better life, 
+                    and I've been able to feel that the limitations are clear through normal work. 
+                    And then I came across something called programming, and 
+                    <b>I wanted to develop a service that would benefit people through programming 
+                    and allow them to spend their time more valuable within the limited time of our lives.
+                    </b> 
+                    After that, in order to study systematically, I started a computer programming and analysis course at Constoga College 
+                    and I am learning development hard.
+                </p>
+                <div class="row-aboutMe">
+                    <div>
+                        <span class="icon-aboutMe">
+                            <img src="images/database-storage.png" alt="database icon">
+                        </span>
+                        <h3>Database</h3>
+                    </div>
+                    <div>
+                        <span class="icon-aboutMe">
+                            <img src="images/website.png" alt="website icon">
+                        </span>
+                        <h3>Web</h3>
+                    </div>                    <div>
+                        <span class="icon-aboutMe">
+                            <img src="images/lamp.png" alt="bulb icon">
+                        </span>
+                        <h3>C#</h3>
+                    </div>                    <div>
+                        <span class="icon-aboutMe">
+                            <img src="images/mobile-phone.png" alt="mobile-phone icon">
+                        </span>
+                        <h3>Mobile</h3>
+                    </div>
+                </div>
+            
+            </div>
+            <div id="techSkills">
+                <span class="heading-meta">Tech skills</span>
+                <h2 class="colorlib-heading">I can do these things.</h2>
+                <p class="description">
+                    I possess experience in <b>developing, testing, and debugging computer solutions using various programming languages and database management systems</b>,
+                     such as C#, Java, Python, and SQL. 
+                     Additionally, I am <b>proficient in performing web application development</b> using a combination of HTML, CSS and JavaScript.
+                </p>
+                <p class="description">
+                    My knowledge and skills extend to network fundamentals, network access, IP connectivity, IP services, and security fundamentals. 
+                    I got CCNA certification and have a thorough understanding of these concepts and can effectively apply them in practice. 
+                </p>
+                <p class="description">Overall, my experience and skills make me able to <b>develop effective solutions across various platforms and systems</b>.</p>
+                <div class="specific-techSkill">
+                    <div>
+                        <b>
+                            <h5>C#</h5>
+                        </b>
+                        <div class="w3-light-grey w3-small w3-round-xlarge">
+                            <div id ="progress-csharp" class="w3-container w3-small w3-blue w3-round-xlarge" style="width:70%">70%</div>
+                        </div>
+                        <p>
+                            I can implement a web app using C# and ASP.NET, 
+                            and I have experience in creating a desktop applicatin using C#.
+                        </p>
+                    </div>
+                    <div>
+                        <b>
+                            <h5>JAVA</h5>
+                        </b>
+                        <div class="w3-light-grey w3-small w3-round-xlarge">
+                            <div id ="progress-java" class="w3-container w3-small w3-round-xlarge" style="width:60%">60%</div>
+                        </div>
+                        <p> I know the basic grammar of the JAVA language, and I have studied data structures and algorithms in JAVA.</p>
+                    </div>
+                    <div>
+                        <b>
+                            <h5>HTML</h5>
+                        </b>
+                        <div class="w3-light-grey w3-small w3-round-xlarge">
+                            <div id ="progress-html" class="w3-container w3-small w3-round-xlarge" style="width:85%">85%</div>
+                        </div>
+                        <p>
+                            I'm Proficient in writing clean, well-structured HTML code
+                            and have Familiarity with HTML5, including new semantic elements and attributes
+                        </p>
+                    </div>
+                    <div>
+                        <b>
+                            <h5>CSS</h5>
+                        </b>
+                        <div class="w3-light-grey w3-small w3-round-xlarge">
+                            <div id ="progress-css" class="w3-container w3-small w3-round-xlarge" style="width:80%">80%</div>
+                        </div>
+                        <p>
+                            I can use css to control the layout of a web page and create a responsive web design.
+                        </p>
+                    </div>
+                    <div>
+                        <b>
+                            <h5>Javascript</h5>
+                        </b>
+                        <div class="w3-light-grey w3-small w3-round-xlarge">
+                            <div id ="progress-js" class="w3-container w3-small w3-round-xlarge" style="width:75%">75%</div>
+                        </div>
+                        <p>I can create dynamic web pages using javascript.</p>
+                    </div>
+                    <div>
+                        <b>
+                            <h5>MySQL</h5>
+                        </b>
+                        <div class="w3-light-grey w3-small w3-round-xlarge">
+                            <div id ="progress-sql" class="w3-container w3-small w3-round-xlarge" style="width:65%">65%</div>
+                        </div>
+                        <p>I have strong understanding of SQL syntax, including complex queries and joins</p>
+                    </div>
+                    <div>
+                        <b>
+                            <h5>Deep Learning</h5>
+                        </b>
+                        <div class="w3-light-grey w3-small w3-round-xlarge">
+                            <div id ="progress-dl" class="w3-container w3-small w3-round-xlarge" style="width:20%">20%</div>
+                        </div>
+                        <p>I am always interested in future technologies, 
+                            and I am currently studying for tensorflow certification.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="myWorks">
+                <div>
+                    <span class="heading-meta">My work</span>
+                    <h2 class="colorlib-heading">Project</h2>
+                </div>
+                <div id="work1" onclick="ShowSpecific(this.id)">
+                    <article class="photos">
+                        <img src="images/g1.jpg" alt="my work">
+                        <p>Malicious UAV Detecting System</p>
+                    </article>
+                </div>
+                <div id="work2" onclick="ShowSpecific(this.id)">
+                    <article class="photos">
+                        <img src="images/g2.jpg" alt="my work">
+                        <p> Dog's Journey </p>
+                    </article>
+                </div>
+                <div id="work3" onclick="ShowSpecific(this.id)">
+                    <article class="photos">
+                        <img src="images/g3.JPG" alt="my work">
+                        <p>My Portfolio</p>
+                    </article>
+                </div>
+                <div id="work4" onclick="ShowSpecific(this.id)">
+                    <article class="photos">
+                        <img src="images/g4.png" alt="my work">
+                        <p> Project manager</p>
+                    </article>
+                </div>
+                <div id="work5" onclick="ShowSpecific(this.id)">
+                    <article class="photos">
+                        <img src="images/g5.jpg" alt="my work">
+                        <p> 3D Modeling Works</p>
+                    </article>
+                </div>
+
+            </div>
+            <!-- modal section -->
+            <div id="modal">
+                <div>
+                    <img src="" alt="" id="modalImage">
+                </div>
+            </div>
+            <!-- experience section -->
+            <div id="experience">
+                <span class="heading-meta">Experience</span>
+                <h2 class="colorlib-heading">What I've experienced</h2>
+                <div class="experience-container">
+                    <article>
+                        <h4>Intern</h4>
+                        <span>03/2019 – 06/2019</span>
+                        <p>
+                          Assisted to respond to issues related to IMO (International Maritime Organization)
+                        </p>
+  
+                    </article>
+                    <article>
+                        <h4>Undergraduate Teaching Assistant</h4>
+                        <span>09/2018 – 12/2018</span>
+                        <p>
+                          Assisted CAD/CAM Design course, lead weekly labs 3hours/week to help 20+students with CATIA.
+                        </p>
+  
+                    </article>
+                    <article>
+                        <h4>Exchange Student</h4>
+                        <span>01/2017 – 02/2017</span>
+                        <p>
+                          I went to Purdue University in the US as an exchange student. <br>
+                          I Performed Malicious UAV detecting project using CNN with purdue university students
+                        </p>
+  
+                    </article>
+                  </div>
+            </div>
+            <!--education  -->
+            <div id="education">
+                <span class="heading-meta">education</span>
+                <h2 class="colorlib-heading">education</h2>
+                <div class="education-content">
+                    <div class="accordion">
+                        <div class="education-title active"><h6>Conestoga College, Waterloo, ON</h6></div>
+                        <div class="education-desc active">
+                            <div>
+                                <b>Computer Programming and Analysis</b><br>
+                                09/2021  – Present                            
+                            </div>
+                            <div>
+                                I am in second year of Computer Programming and Analysis and maintain 3.85 GPA
+                            </div>
+                        </div>
+    
+                        <div class="education-title "><h6>Chungnam Nnational University, Republic of Korea</h6></div>
+                        <div class="education-desc">
+                            <div>
+                                <b>Bachelor of Naval Architecture and Ocean Engineering<br>
+                                    Interdisciplinary Major of Computer Science Engineering</b><br>
+                                03/2015 – 02/2019                            
+                            </div>
+                            <div>
+                                GPA 3.89/4.5<br>
+                                Relevant courses: Computer programming, Operating system, Data structure, Algorithms, SW Capstone Design, Object-Oriented Design, Software Engineering, Web Programming 
+                            </div>
+                        </div>
+                        
+                        <div class="education-title "><h6>Pusan National University, Republic of Korea</h6></div>
+                        <div class="education-desc">
+                            <div>
+                                03/2012 – 06/2014                           
+                            </div>
+                            <div>
+                                Completed 45 credits towards a German Language and Literature
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contact -->
+            <div id="contact">
+                <span class="heading-meta">Get in touch</span>
+                <h2 class="colorlib-heading">contact</h2>
+                <div class="contact-method">
+                    <div>
+                        <i class="fa-regular fa-envelope fa-2x"></i>
+                        <a href="mailto:Gkim2832@conestogac.on.ca" target="_blank">gkim2832@conestogac.on.ca</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                        <a href="https://www.linkedin.com/in/gayoung-kim-821468248/" target="_blank">gayoung-kim-821468248</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-github fa-2x"></i>
+                        <a href="https://github.com/GAYOUNGKIM92" target="_blank">GAYOUNGKIM92</a>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-regular fa-map fa-2x"></i>
+                        <span>Waterloo, ON, CANADA</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            &copy;2023 Gayoung Kim 
+        </footer>
+    </div>
+    <script src="javascript/myScript.js"></script>
+
+</body>
+</html>
