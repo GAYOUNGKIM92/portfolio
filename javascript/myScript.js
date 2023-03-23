@@ -41,7 +41,13 @@ function windowOnclick(event) {
       document.getElementById('modal').style.display = "none";
   }
 }
+document.addEventListener('touchstart', function(event){
+  
+  if (event.target == document.getElementById('modal')) {
+          document.getElementById('modal').style.display = "none";
+      }
 
+});
 
 $('.education-title').click(function(){
   $(this).addClass('active');
